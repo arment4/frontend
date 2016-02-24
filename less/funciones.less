@@ -17,7 +17,7 @@
 
 // aplica un degradado de dos colores
 .color-fondo-degradado(@primer-color, @segundo-color) {
-	background: @segundo-color; /* Old browsers */ // color for text calculated against bottom color
+	background: @primer-color; /* navegadores viejos */ //
 	background: -moz-linear-gradient(top,  @primer-color 0%, @segundo-color 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@primer-color), color-stop(100%,@segundo-color)); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top,  @primer-color 0%,@segundo-color 100%); /* Chrome10+,Safari5.1+ */
@@ -28,7 +28,7 @@
 
 // divide el conenedor en dos colores vertical
 .color-fondo-dos-colores(@primer-color, @segundo-color) {
-	background: @segundo-color; /* Old browsers */
+	background: @primer-color; /* navegodres viejos */
 	background: -moz-linear-gradient(top,  @primer-color 0%, @primer-color 50%, @segundo-color 50%, @segundo-color 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@primer-color), color-stop(50%,@primer-color), color-stop(50%,@segundo-color), color-stop(100%,@segundo-color)); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top,  @primer-color 0%,@primer-color 50%,@segundo-color 50%,@segundo-color 100%); /* Chrome10+,Safari5.1+ */
